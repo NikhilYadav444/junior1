@@ -1,0 +1,85 @@
+/* 🌿 General page styling */
+body {
+  background: linear-gradient(135deg, #e0f7fa, #f9fbe7);
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Navbar */
+.navbar {
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+/* Headings */
+h1, h2, h3, h4, h5 {
+  color: #2e7d32;
+  font-weight: 600;
+}
+
+/* Sensor cards */
+.card {
+  border: none;
+  border-radius: 12px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  background: #fff;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+}
+
+.card h3 {
+  color: #00796b;
+  font-size: 1.6rem;
+}
+
+/* Chart container */
+canvas {
+  max-height: 300px;
+}
+
+/* Button styles */
+button {
+  border-radius: 6px !important;
+  transition: background 0.2s ease;
+}
+
+button:hover {
+  background: #1b5e20 !important;
+  color: #fff !important;
+}
+
+/* Welcome text */
+#welcome {
+  color: #33691e;
+  font-weight: 500;
+}
+
+/* Status indicators (for future use) */
+.status-dot {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  margin-right: 6px;
+}
+
+.status-on {
+  background-color: #00c853;
+}
+
+.status-off {
+  background-color: #d50000;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .card h3 {
+    font-size: 1.3rem;
+  }
+  .card h5 {
+    font-size: 1rem;
+  }
+}
